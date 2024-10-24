@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-def square_matrix_simple(matrix=[]):
-    squared = []
-    for line in matrix:
-        squared.append([c**2 for c in line])
-    return squared
+def print_list_integer(my_list=[]):
+    for i in my_list:
+        print("{:d}".format(i))
