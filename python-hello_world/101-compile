@@ -1,3 +1,10 @@
-#!/usr/bin/python3
-def magic_calculation(a, b):
-    return (98 + a ** b)
+import os
+import py_compil
+pyfile = os.getenv('PYFILE'
+if pyfile:
+    output_filename = pyfile + 'c'
+    py_compile.compile(pyfile, cfile=output_filename)
+    print(f"Compiled {pyfile} to {output_filename}")
+else:
+    print("Error: PYFILE environment variable not set.")
+
